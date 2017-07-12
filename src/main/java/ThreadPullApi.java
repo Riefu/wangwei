@@ -27,7 +27,6 @@ public class ThreadPullApi implements Runnable {
         asList("","");//  待访问API地址
     }
     private   FileOutputStream fos ;
-    private  Logger logger = Logger.getLogger(this.getClass());
 
     private  Map<String,Map> cacheMap = new HashMap<String, Map>(); //需要缓存的查询结果 已二进制数据缓存至本地文件
 
@@ -38,7 +37,7 @@ public class ThreadPullApi implements Runnable {
      * @throws IOException
      * @throws ClassNotFoundException
      */
-    public static void main(String[] args) throws IOException, ClassNotFoundException {/
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
 
             query();
     }
